@@ -23,3 +23,7 @@ items = {
 
 }
 
+@app.get("/")
+def index() -> dict[str, dict[int, Item]]:
+    return {"items": items}
+
